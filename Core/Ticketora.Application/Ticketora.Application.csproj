@@ -7,12 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Ticketora.Domain\Ticketora.Domain.csproj" />
+    <Folder Include="Features\MediatorDesignPattern\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\CQRSDesignPattern\" />
-    <Folder Include="Features\MediatorDesignPattern\" />
+    <ProjectReference Include="..\..\Infrastructure\Ticketora.Persistence\Ticketora.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
