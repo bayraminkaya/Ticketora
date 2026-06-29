@@ -1,4 +1,5 @@
 using Ticketora.Application.Features.CQRSDesignPattern.Categories.Handlers;
+using Ticketora.Application.Features.CQRSDesignPattern.Events.Handlers;
 using Ticketora.Persistence.Context;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,12 @@ builder.Services.AddScoped<RemoveCategoryCommandHandler>();
 builder.Services.AddScoped<UpdateCategoryCommandHandler>();
 builder.Services.AddScoped<GetCategoryQueryHandler>();
 builder.Services.AddScoped<GetByIdCategoryQueryHandler>();
+
+builder.Services.AddScoped<CreateEventCommandHandler>();
+builder.Services.AddScoped<UpdateEventCommandHandler>();
+builder.Services.AddScoped<RemoveEventCommandHandler>();
+builder.Services.AddScoped<GetEventQueryHandler>();
+builder.Services.AddScoped<GetByIdEventQueryHandler>();
 
 builder.Services.AddDbContext<TicketoraContext>();
 

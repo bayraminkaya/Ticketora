@@ -1,0 +1,33 @@
+﻿@model List<Ticketora.Application.Features.CQRSDesignPattern.Events.Results.GetEventQueryResult>
+
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <br /><br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Başlık</th>
+            <th>Tarih</th>
+            <th>Lokasyon</th>
+            <th>Fiyat</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EventId</td>
+                <td>@item.Title</td>
+                <td>@item.EventDate</td>
+                <td>@item.Location</td>
+                <td>@item.Price</td>
+                <td><a href="/Event/DeleteEvent/@item.EventId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Event/UpdateEvent/@item.EventId" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Event/CreateEvent" class="btn btn-primary">Yeni Etkinlik Girişi</a>
+</div>
