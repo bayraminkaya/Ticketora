@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Ticketora.Application.Features.MediatorDesignPattern.Commands;
+using Ticketora.Application.Features.MediatorDesignPattern.NewFolder.Commands;
 using Ticketora.Persistence.Context;
 
-namespace Ticketora.Application.Features.MediatorDesignPattern.Handlers
+namespace Ticketora.Application.Features.MediatorDesignPattern.NewFolder.Handlers
 {
     public class UpdateTicketCommandHandler : IRequestHandler<UpdateTicketCommand>
     {

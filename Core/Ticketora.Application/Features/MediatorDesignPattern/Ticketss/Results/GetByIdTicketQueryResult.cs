@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ticketora.Application.Features.MediatorDesignPattern.Results
+namespace Ticketora.Application.Features.MediatorDesignPattern.NewFolder.Results
 {
     public class GetByIdTicketQueryResult
     {

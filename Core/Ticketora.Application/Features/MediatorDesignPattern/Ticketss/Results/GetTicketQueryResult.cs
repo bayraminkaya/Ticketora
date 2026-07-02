@@ -1,13 +1,12 @@
-﻿using MediatR;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ticketora.Application.Features.MediatorDesignPattern.Commands
+namespace Ticketora.Application.Features.MediatorDesignPattern.NewFolder.Results
 {
-    public class UpdateTicketCommand : IRequest
+    public class GetTicketQueryResult
     {
         public int TicketId { get; set; }
         public string TicketNumber { get; set; }

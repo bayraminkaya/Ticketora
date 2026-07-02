@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ticketora.Application.Features.MediatorDesignPattern.Commands
+namespace Ticketora.Application.Features.MediatorDesignPattern.NewFolder.Commands
 {
     public class RemoveTicketCommand: IRequest
     {

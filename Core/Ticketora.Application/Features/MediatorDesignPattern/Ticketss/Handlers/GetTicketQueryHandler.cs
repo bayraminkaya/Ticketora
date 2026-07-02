@@ -5,11 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Ticketora.Application.Features.MediatorDesignPattern.Queries;
-using Ticketora.Application.Features.MediatorDesignPattern.Results;
+using Ticketora.Application.Features.MediatorDesignPattern.NewFolder.Queries;
+using Ticketora.Application.Features.MediatorDesignPattern.NewFolder.Results;
 using Ticketora.Persistence.Context;
 
-namespace Ticketora.Application.Features.MediatorDesignPattern.Handlers
+namespace Ticketora.Application.Features.MediatorDesignPattern.NewFolder.Handlers
 {
     public class GetTicketQueryHandler : IRequestHandler<GetTicketQuery, List<GetTicketQueryResult>>
     {
