@@ -1,13 +1,12 @@
-﻿using MediatR;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ticketora.Application.Features.MediatorDesignPattern.Participants.Commands
+namespace Ticketora.Application.Features.MediatorDesignPattern.Participants.Results
 {
-    public class UpdateParticipantsCommand :IRequest
+    public class GetByIdParticipantQueryResult
     {
         public int ParticipantId { get; set; }
         public string Name { get; set; }

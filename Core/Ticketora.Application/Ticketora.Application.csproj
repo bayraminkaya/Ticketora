@@ -14,10 +14,4 @@
     <ProjectReference Include="..\..\Infrastructure\Ticketora.Persistence\Ticketora.Persistence.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\MediatorDesignPattern\Participants\Handlers\" />
-    <Folder Include="Features\MediatorDesignPattern\Participants\Results\" />
-    <Folder Include="Features\MediatorDesignPattern\Participants\Queries\" />
-  </ItemGroup>
-
 </Project>

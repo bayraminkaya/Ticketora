@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Ticketora.Application.Features.MediatorDesignPattern.NewFolder.Commands;
-using Ticketora.Application.Features.MediatorDesignPattern.Queries;
+using Ticketora.Application.Features.MediatorDesignPattern.NewFolder.Queries;
 
 namespace Ticketora.WebUI.Controllers
 {

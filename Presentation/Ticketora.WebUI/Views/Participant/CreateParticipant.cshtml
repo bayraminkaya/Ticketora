@@ -1,0 +1,27 @@
+﻿@model Ticketora.Application.Features.MediatorDesignPattern.Participants.Commands.CreateParticipantCommand
+
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <label>Adınız</label>
+        <input type="text" asp-for="Name" class="form-control" />
+        <br />
+        <label>Soyadınız</label>
+        <input type="text" asp-for="Surname" class="form-control" />
+        <br />
+        <label>Email Adresiniz</label>
+        <input type="text" asp-for="Email" class="form-control" />
+        <br />
+        <label>Telefon Numarası</label>
+        <input type="text" asp-for="PhoneNumber" class="form-control" />
+        <br />
+        <label>Tarih</label>
+        <input type="text" asp-for="CheckInDate" class="form-control" />
+        <br />
+        <button class="btn btn-primary">Kaydet</button>
+    </form>
+</div>

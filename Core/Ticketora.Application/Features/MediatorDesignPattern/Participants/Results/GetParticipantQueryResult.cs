@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ticketora.Application.Features.MediatorDesignPattern.Participants.Commands
+namespace Ticketora.Application.Features.MediatorDesignPattern.Participants.Results
 {
-    public class CreateParticipantsCommand
+    public class GetParticipantQueryResult
     {
+        public int ParticipantId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
